@@ -1,16 +1,27 @@
+<!DOCTYPE html>
 <html>
-
 <head>
   <script type="application/javascript" src="index.js"></script>
   <title>GitHub Auto Deploy</title>
 </head>
-
 <body>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P9WWSYJ6JJ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-P9WWSYJ6JJ');
+</script>
+<script>
+	import LogRocket from 'logrocket';
+	LogRocket.init('etmli9/hypertreessite');
+</script>
   <h1>CSE 135</h1>
   <section id="personal-sites">
     <h2>Members</h2>
     <p>
-      <a href="#">Nathan's Portfolio &lpar;Work In Progress&rpar;</a>
+      <a href="/members/npaguio/npaguio.html">Nathan's Portfolio</a>
       <a href="/members/dsinger/dsinger.html">Dmitri's Portfolio</a>
     </p>
   </section>
@@ -25,7 +36,18 @@
   </section>
   <section id="python-cgi-code">
     <p>
-      
+      <a href="/cgi-python/hello-html-python.py">Python Hello World HTML</a>
+      <a href="/cgi-python/hello-json-python.py">Python Hello World JSON</a>
+      <a href="/cgi-python/echo-python.py">Python General Echo</a>
+      <a href="/cgi-python/environment-python.py">Python Environment Variables</a>
+    </p>
+  </section>
+  <section id="java-cgi-code">
+    <p>
+      <a href="/cgi-java/hello-html-java.java">Java Hello World HTML</a>
+      <a href="/cgi-java/hello-json-java.java">Java Hello World JSON</a>
+      <a href="/cgi-java/echo-java.java">Java General Echo</a>
+      <a href="/cgi-java/environment-java.java">Java Environment Variables</a>
     </p>
   </section>
 </body>
