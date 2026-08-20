@@ -1,3 +1,5 @@
+#!usr/bin/env python3
+
 import time
 import os
 print("Cache-Control: no-cache\n")
@@ -14,7 +16,7 @@ print("<h1 align=center>Hello HTML World</h1><hr/>")
 print("<p>HyperTrees</p>")
 print("<p>This page was generated with the Python programming language</p>")
 
-date = time.localTime();
+date = time.localtime()
 print(f"<p>This program was generated at: {time}</p>")
 
 address = os.environ.get("REMOTE_ADDR")
@@ -22,4 +24,3 @@ print(f"<p>Your current IP Address is: {address}</p>")
 
 print("</body>")
 print("</html>")
-

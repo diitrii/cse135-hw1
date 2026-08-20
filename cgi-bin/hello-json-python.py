@@ -1,11 +1,13 @@
-import json;
-import time;
-import os;
+#!usr/bin/env python3
+
+import json
+import time
+import os
 
 print("Cache-Control: no-cache\n")
 print("Content-Type: application/json\n\n")
 
-date = time.localTime();
+date = time.localTime()
 address = os.environ.get("REMOTE_ADDR")
 data = {
     "title": "Hello, HyperTrees!",

@@ -1,3 +1,5 @@
+#!usr/bin/env python3
+
 import os
 
 print("Cache-Control: no-cache\n")
