@@ -20,9 +20,8 @@ func main() {
 	fmt.Println("<p>Hello World</p>")
 	fmt.Println("<p>This page was generated with the Go programming language.</p>")
 
-	fmt.Println("<p>This program was generated at: ", time.Now().Format(time.RFC1123), ".</p>")
-
-	fmt.Println("<p>Your current IP Address is: ", os.Getenv("REMOTE_ADDR"), "</p>")
+	fmt.Printf("<p>This program was generated at: %s.</p>\n", time.Now().Format(time.RFC1123))
+	fmt.Printf("<p>Your current IP Address is: %s</p>\n", os.Getenv("REMOTE_ADDR"))
 	fmt.Println("</body>")
 	fmt.Println("</html>")
 }
