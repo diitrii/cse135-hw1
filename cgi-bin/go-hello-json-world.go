@@ -1,23 +1,23 @@
-package main
+package cgibin
 
 import (
-    "fmt"
 	"encoding/json"
+	"fmt"
 	"os"
 	"time"
 )
 
-func main(){
+func main() {
 	fmt.Println("Cache-Control: no-cache")
 	fmt.Println("Content-type: application/json")
 	fmt.Println()
-	
+
 	jsonHello := map[string]string{
-		"title": "Hello, Go!",
+		"title":   "Hello, Go!",
 		"heading": "Hello, Go!",
 		"message": "This page was generated with the Go programming language.",
-		"time": time.Now().Format(time.RFC1123),
-		"IP": os.Getenv("REMOTE_ADDR"),
+		"time":    time.Now().Format(time.RFC1123),
+		"IP":      os.Getenv("REMOTE_ADDR"),
 	}
 
 	jsonData, err := json.Marshal(jsonHello)

@@ -1,12 +1,12 @@
-package main
+package cgibin
 
 import (
-    "fmt"
-    "io"
-    "os"
+	"fmt"
+	"io"
+	"os"
 )
 
-func main(){
+func main() {
 	fmt.Println("Cache-Control: no-cache")
 	fmt.Println("Content-type: text/html")
 	fmt.Println()
