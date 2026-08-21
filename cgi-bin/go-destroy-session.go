@@ -1,4 +1,4 @@
-package main
+package cgibin
 
 import (
 	"fmt"
@@ -30,8 +30,8 @@ func main() {
 	data, err := os.ReadFile(sessionFile)
 	if err == nil {
 		username = string(data)
-	} 
-	
+	}
+
 	if username == "" {
 		contentLength := os.Getenv("CONTENT_LENGTH")
 		if contentLength != "" {
@@ -48,7 +48,6 @@ func main() {
 	if username != "" {
 		os.WriteFile(sessionFile, []byte(username), 0600)
 	}
-
 
 	fmt.Println("Content-Type: text/html")
 	fmt.Printf("Set-Cookie: GOSESSIONID=%s; Path=/\r\n", sessionID)

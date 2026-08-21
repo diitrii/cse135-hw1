@@ -1,12 +1,13 @@
 package main
 
-import(
+import (
 	"fmt"
 	"os"
+	"sort"
 	"strings"
 )
 
-func main(){
+func main() {
 	fmt.Println("Cache-Control: no-cache")
 	fmt.Println("Content-type: text/html")
 	fmt.Println()
